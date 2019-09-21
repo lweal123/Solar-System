@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <html>
     <head>
         <link rel="stylesheet" href="style.css" />
@@ -220,3 +221,227 @@
           </script>
     </body>
 </html>
+=======
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body onLoad="startTimer()">
+      <div id = "solarSystemContainer">
+        <div id="solarSystem">
+          <img id="sun" src="images/sun.jpg" value = "sun">
+        	<div id='mercury-orbit'><img id="mercury" src="images/mercury.jpg" value = "Mercury"></div>
+        	<div id='venus-orbit'><img id="venus" src="images/venus.jpg" value = "Venus"></div>
+          <div id='earth-orbit'><img id="earth" src="images/earth.jpg" value = "Earth"></div>
+          <div id='mars-orbit'><img id="mars" src="images/mars.jpg" value = "Mars"></div>
+          <div id='jupiter-orbit'><img id="jupiter" src="images/jupiter.png" value = "Jupiter"></div>
+          <div id='saturn-orbit'><img id="saturn" src="images/saturn.jpg" value = "Saturn"></div>
+          <div id='uranus-orbit'><img id="uranus" src="images/uranus.png" value = "Uranus"></div>
+          <div id='neptune-orbit'><img id="neptune" src="images/neptune.jpg" value = "Neptune"></div>
+        </div>
+      </div>
+      <div id="tablesContainer">
+        <div id = "tableNotesContainer">
+          <div id = "movetableContainer">
+                  <table id = "movetable">
+                    <thead>
+                      <tr><th colspan = "2" class="nb">Time wasted watching this:</th><th id="timeElapsed" class="nb"></th></tr>
+                      <tr><th>Celestial Body</th><th>Solar Orbits</th><th>Axis Rotations*</th></tr>
+                    </thead>
+                    <tbody>
+                      <tr id="SunLine"><td>Sun</td><td id="SunOrbits" class = "center">0.00</td><td id="SunRotations" class = "center"></p>
+                      <tr id="MercuryLine"><td>Mercury</td><td id="MercuryOrbits" class = "center"></td><td id="MercuryRotations" class = "center"></p>
+                      <tr id="VenusLine"><td>Venus</td><td id="VenusOrbits" class = "center"></td><td id="VenusRotations" class = "center"></p>
+                      <tr id="EarthLine"><td>Earth</td><td id="EarthOrbits" class = "center"></td><td id="EarthRotations" class = "center"></p>
+                      <tr id="MarsLine"><td>Mars</td><td id="MarsOrbits" class = "center"></td><td id="MarsRotations" class = "center"></p>
+                      <tr id="JupiterLine"><td>Jupiter</td><td id="JupiterOrbits" class = "center"></td><td id="JupiterRotations" class = "center"></p>
+                      <tr id="SaturnLine"><td>Saturn</td><td id="SaturnOrbits" class = "center"></td><td id="SaturnRotations" class = "center"></p>
+                      <tr id="UranusLine"><td>Uranus</td><td id="UranusOrbits" class = "center"></td><td id="UranusRotations" class = "center"></p>
+                      <tr id="NeptuneLine"><td>Neptune</td><td id="NeptuneOrbits" class = "center"></td><td id="NeptuneRotations" class = "center"></p>
+                    </tbody>
+                  </table>
+          </div>
+
+          <div id="notesContainer">
+                <div id="NoteZero"><sup>*</sup>Axis rotations based on Sidereal Period</div>
+                <div id="NoteOne"><sup>1</sup>Orbit and rotation times are on two different time scales. If they were set to the same scale,
+                  either the planets would spin extremely fast, or you would have to wait hours to see Uranus and Neptune orbits.</div>
+                <div id="NoteTwo"><sup>2</sup>Planet sizes are set relative to Earth's diameter. Planet orbits are scaled to fit into 1920 pixels,
+                  and are not proportionate to planet sizes. If they were, the planets would be very small and often imperceptable.</div>
+          </div>
+        </div>
+
+        <div id="planetsTableContainer">
+              <table id="planetstable">
+                <tr>
+                  <th>Planet</th>
+                  <th>Dist from Sun</th>
+                  <th>Diameter</th>
+                  <th>Axis Rotation Time</th>
+                  <th>Solar Orbit Time</th>
+                  <th>Gravity (Earth = 1)</th>
+                  <th>Average Temp</th>
+                  <th>Atmosphere Mix</th>
+                  <th>Moons</th>
+                </tr>
+                <tr>
+                  <td>Mercury</td>
+                  <td>57,900,000 km<br><span class="us">36,000,000 miles</span></td>
+                  <td>4,878 km<br><span class="us">3,031 miles</span></td>
+                  <td>59 days</td>
+                  <td>88 days</td>
+                  <td>0.38</td>
+                  <td>-183&#8451; to 427&#8451;<br><span class="us">-297&#8457; to 800&#8457;</span></td>
+                  <td>Sodium, helium</td>
+                  <td>None</td>
+                </tr>
+                <tr>
+                  <td>Venus</td>
+                  <td>108,160,000 km<br><span class="us">67,000,000 miles</span></td>
+                  <td>12,104 km<br><span class="us">7,521 miles</span></td>
+                  <td>243 days</td>
+                  <td>224 days</td>
+                  <td>0.9</td>
+                  <td>480&#8451;<br><span class="us">896&#8457;</span></td>
+                  <td>Carbon Dioxide (96%), Nitrogen (3.5%</td>
+                  <td>None</td>
+                </tr>
+                <tr>
+                  <td>Earth</td>
+                  <td>149,600,000 km<br><span class="us">92,960,000 miles</span></td>
+                  <td>12,756 km<br><span class="us">7,926 miles</span></td>
+                  <td>23 hours, 56 mins</td>
+                  <td>365.25 days</td>
+                  <td>1</td>
+                  <td>14&#8451;<br><span class="us">57&#8457;</span></td>
+                  <td>Nitrogen (77%), Oxygen (21%</td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td>Mars</td>
+                  <td>227,936,640 km<br><span class="us">141,700,000 miles</span></td>
+                  <td>6,794 km<br><span class="us">4,222 miles</span></td>
+                  <td>24 hours, 37 mins</td>
+                  <td>687 days</td>
+                  <td>0.38</td>
+                  <td>-63&#8451;<br><span class="us">-81&#8457;</span></td>
+                  <td>Carbon Dioxide(95.3%), Argon</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>Jupiter</td>
+                  <td>778,369,000 km<br><span class="us">483,500,000 miles</span></td>
+                  <td>142,984 km<br><span class="us">88,846 miles</span></td>
+                  <td>9 hours, 55 mins</td>
+                  <td>11.86 years</td>
+                  <td>2.64</td>
+                  <td>-130&#8451;<br><span class="us">-202&#8457;</span></td>
+                  <td>Hydrogen, Helium</td>
+                  <td>79</td>
+                </tr>
+                <tr>
+                  <td>Saturn</td>
+                  <td>1,427,034,000 km<br><span class="us">888,750,000 miles</span></td>
+                  <td>120,536 km<br><span class="us">74,900 miles</span></td>
+                  <td>10 hours, 39 mins</td>
+                  <td>29 years</td>
+                  <td>1.16</td>
+                  <td>-130&#8451;<br><span class="us">-202&#8457;</span></td>
+                  <td>Hydrogen, Helium</td>
+                  <td>62</td>
+                </tr>
+                <tr>
+                  <td>Uranus</td>
+                  <td>2,870,658,186 km<br><span class="us">1,783,744,300 miles</span></td>
+                  <td>51,118 km<br><span class="us">31,763 miles</span></td>
+                  <td>17 hours, 14 mins</td>
+                  <td>84 years</td>
+                  <td>1.11</td>
+                  <td>-200&#8451;<br><span class="us">-328&#8457;</span></td>
+                  <td>Hydrogen, Helium, Methane</td>
+                  <td>27</td>
+                </tr>
+                <tr>
+                  <td>Neptune</td>
+                  <td>4,496,976,000 km<br><span class="us">2,797,770,000 miles</span></td>
+                  <td>49,532 km<br><span class="us">30,779 miles</span></td>
+                  <td>16 hours, 7 mins</td>
+                  <td>164.8 years</td>
+                  <td>1.21</td>
+                  <td>-200&#8451;<br><span class="us">-328&#8457;</span></td>
+                  <td>Hydrogen, Helium, Methane</td>
+                  <td>14</td>
+                </tr>
+              </table>
+            <div>
+              <span style = "color: white;">*table snagged from <a href="https://www.bobthealien.co.uk/solarsystem/table.htm" target = "_blank">Bob the Alien's</a> website.
+              Sounded credible, so I did not verify data using other sources.<span>
+            </div>
+        </div>
+      </div>
+          <script>
+
+              var seconds = null;
+              var ticker = null;
+
+              function startTimer(){
+                  seconds = -1;
+                  ticker = setInterval("tick()", 1000);
+                  tick();
+              }
+
+              function tick(){
+                  ++seconds;
+                  var secs = seconds;
+                  var hrs = Math.floor(secs/3600);
+                  secs %= 3600;
+                  var mns = Math.floor(secs/60);
+                  secs %= 60;
+                  var hmsformat = (hrs < 10 ? "0" : "") + hrs + ":" + (mns < 10 ? "0" : "") + mns + ":" + (secs < 10 ? "0" : "") + secs;
+
+                  var sunRotations = seconds/48.14;
+                  var mercuryRotations = seconds/118.32;
+                  var venusRotations = seconds/487.36;
+                  var earthRotations = seconds/2;
+                  var marsRotations = seconds/2.06;
+                  var jupiterRotations = seconds/.82;
+                  var saturnRotations = seconds/.88;
+                  var uranusRotations = seconds/1.44;
+                  var neptuneRotations = seconds/1.44;
+
+                  var mercuryOrbits = seconds/2;
+                  var venusOrbits = seconds/5.11;
+                  var earthOrbits = seconds/8.3;
+                  var marsOrbits = seconds/15.62;
+                  var jupiterOrbits = seconds/98.49;
+                  var saturnOrbits = seconds/244.64;
+                  var uranusOrbits = seconds/697.63;
+                  var neptuneOrbits = seconds/1368.52;
+
+                  document.getElementById("timeElapsed").innerHTML = hmsformat;
+
+                  document.getElementById("SunRotations").innerHTML = sunRotations.toFixed(2);
+                  document.getElementById("MercuryRotations").innerHTML = mercuryRotations.toFixed(2);
+                  document.getElementById("VenusRotations").innerHTML = venusRotations.toFixed(2);
+                  document.getElementById("EarthRotations").innerHTML = earthRotations.toFixed(2);
+                  document.getElementById("MarsRotations").innerHTML = marsRotations.toFixed(2);
+                  document.getElementById("JupiterRotations").innerHTML = jupiterRotations.toFixed(2);
+                  document.getElementById("SaturnRotations").innerHTML = saturnRotations.toFixed(2);
+                  document.getElementById("UranusRotations").innerHTML = uranusRotations.toFixed(2);
+                  document.getElementById("NeptuneRotations").innerHTML = neptuneRotations.toFixed(2);
+
+                  document.getElementById("MercuryOrbits").innerHTML = mercuryOrbits.toFixed(2);
+                  document.getElementById("VenusOrbits").innerHTML = venusOrbits.toFixed(2);
+                  document.getElementById("EarthOrbits").innerHTML = earthOrbits.toFixed(2);
+                  document.getElementById("MarsOrbits").innerHTML = marsOrbits.toFixed(2);
+                  document.getElementById("JupiterOrbits").innerHTML = jupiterOrbits.toFixed(2);
+                  document.getElementById("SaturnOrbits").innerHTML = saturnOrbits.toFixed(2);
+                  document.getElementById("UranusOrbits").innerHTML = uranusOrbits.toFixed(2);
+                  document.getElementById("NeptuneOrbits").innerHTML = neptuneOrbits.toFixed(2);
+              }
+
+          </script>
+    </body>
+</html>
+>>>>>>> 3a8c53f0054ac48ae507eb3cfa4d6bfa5dfaccef
