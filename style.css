@@ -1,0 +1,630 @@
+html, body {
+    /* The universe takes up all available space */
+    width: 100%;
+    height: 100%;
+
+    /* The universe is black */
+    background-color: black;
+}
+
+#solarSystemContainer {
+  position: relative;
+  display: inline-block;
+  width: 900px;
+  height: 1000px;
+  /*border: 1px solid yellow;*/
+}
+#solarSystem {
+  position: absolute;
+  top: 500px;
+}
+
+#tablesContainer {
+  position: relative;
+  display: inline-block;
+  width: 900px;
+  height: 1000px;
+  vertical-align: top;
+  /*border: 1px solid yellow;*/
+}
+
+#tableNotesContainer {
+  width: 900;
+  height: 400px;
+  /*border: 1px solid green;*/
+}
+
+#movetableContainer {
+  position: relative;
+  display: inline-block;
+  height: 350px;
+  width: 300px;
+  margin: 25px;
+  /*border: 1px solid yellow;*/
+}
+
+#movetable {
+ color: red;
+}
+
+#movetable tr,td {
+ border: 1px solid red;
+}
+#movetable th {
+  border: 1px solid white;
+  box-shadow: 2px 2px white;
+}
+
+#notesContainer {
+  position: relative;
+  display: inline-block;
+  height: 400px;
+  width: 400px;
+  vertical-align: top;
+  margin: 50px;
+}
+
+#planetsTableContainer {
+  position: relative;
+  display: inline-block;
+  height: 350px;
+  width: 850px;
+  margin: 25px;
+  /*border: 1px solid yellow;*/
+}
+
+#planetstable {
+	font-family: 'Muli', Arial, Helvetica, sans-serif;
+	font-size:10px;
+  text-align: center;
+  color: yellow;
+}
+
+#planetstable th {
+  width:10%;
+  color: white;
+  border: 1px solid white;
+  box-shadow: 2px 2px white;
+}
+
+.us {
+  color: red;
+}
+
+.nb{
+  border: none;
+}
+.center {
+  text-align: center;
+}
+
+#SunLine {
+  color: #FC9601;
+}
+#MercuryLine {
+  color: #97979F;
+}
+#VenusLine {
+  color: yellow;
+}
+#EarthLine {
+  color: #8CB1DE;
+}
+#MarsLine {
+  color: #E27B58;
+}
+#JupiterLine {
+  color: #D2CFDA;
+}
+#SaturnLine {
+  color: #C5AB6E;
+}
+#UranusLine {
+  color: #D5FBFC;
+}
+#NeptuneLine {
+  color: #6081FF;
+}
+#NoteZero {
+  color: red;
+}
+#NoteOne {
+  color: white;
+}
+#NoteTwo {
+  color: blue;
+}
+
+#sun {
+    position: absolute;
+    /* Positions the top-left corner of the image to be *
+    /* in the middle of the box */
+    top: 0%;
+    left: 0%;
+
+    /* Play with these numbers to see what it does */
+    height: 400px;
+    width: 400px;
+
+    margin-top: -200px;
+    margin-left: -200px;
+
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 50%;
+
+    box-shadow: 0 0 64px red;
+
+    -webkit-animation: spin-right 48.14s linear infinite;
+     -moz-animation: spin-right 48.14s linear infinite;
+      -ms-animation: spin-right 48.14s linear infinite;
+       -o-animation: spin-right 48.14s linear infinite;
+          animation: spin-right 48.14s linear infinite
+
+}
+#mercury {
+    /* Style your mercury */
+    position: absolute;
+    top: 0%;
+    left: 50%;
+
+    height: 1.40px;
+    width: 1.40px;
+    margin-left: -0.70px;
+    margin-top: -0.70px;
+
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 50%;
+
+    box-shadow: 0 0 128px black;
+
+    -webkit-animation: spin-right 118.32s linear infinite;
+     -moz-animation: spin-right 118.32s linear infinite;
+      -ms-animation: spin-right 118.32s linear infinite;
+       -o-animation: spin-right 118.32s linear infinite;
+          animation: spin-right 118.32s linear infinite
+
+
+}
+
+#mercury-orbit {
+    /* For Section #2 */
+    position: absolute;
+
+    top: 0%;
+    left: 0%;
+
+    width: 442.16px;
+    height: 442.16px;
+    margin-top: -221.08px;
+    margin-left: -221.08px;
+
+    border-width: 1px;
+    /*border-style: dashed;
+    border-color: white;*/
+    border-radius: 50%;
+
+    -webkit-animation: spin-right 2s linear infinite;
+     -moz-animation: spin-right 2s linear infinite;
+      -ms-animation: spin-right 2s linear infinite;
+       -o-animation: spin-right 2s linear infinite;
+          animation: spin-right 2s linear infinite
+
+}
+#venus {
+    /* Style your venus */
+    position: absolute;
+    top: 0%;
+    left: 50%;
+
+    height: 3.48px;
+    width: 3.48px;
+    margin-left: -1.74px;
+    margin-top: -1.74px;
+
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 50%;
+
+    box-shadow: 0 0 128px black;
+
+    -webkit-animation: spin-left 487.36s linear infinite;
+     -moz-animation: spin-left 487.36s linear infinite;
+      -ms-animation: spin-left 487.36s linear infinite;
+       -o-animation: spin-left 487.36s linear infinite;
+          animation: spin-left 487.36s linear infinite
+
+
+}
+
+#venus-orbit {
+    /* For Section #2 */
+    position: absolute;
+
+    top: 0%;
+    left: 0%;
+
+    width: 457.06px;
+    height: 457.06px;
+    margin-top: -228.53px;
+    margin-left: -228.53px;
+
+    border-width: 1px;
+    /*border-style: dashed;
+    border-color: white;*/
+    border-radius: 50%;
+
+    -webkit-animation: spin-right 5.11s linear infinite;
+     -moz-animation: spin-right 5.11s linear infinite;
+      -ms-animation: spin-right 5.11s linear infinite;
+       -o-animation: spin-right 5.11s linear infinite;
+          animation: spin-right 5.11s linear infinite
+
+}
+
+
+#earth {
+    /* Style your earth */
+    position: absolute;
+    top: 0%;
+    left: 50%;
+
+    height: 3.67px;
+    width: 3.67px;
+    margin-left: -1.835px;
+    margin-top: -1.835px;
+
+    -webkit-animation: spin-right 2s linear infinite;
+     -moz-animation: spin-right 2s linear infinite;
+      -ms-animation: spin-right 2s linear infinite;
+       -o-animation: spin-right 2s linear infinite;
+          animation: spin-right 2s linear infinite
+
+
+}
+
+#earth-orbit {
+    /* For Section #2 */
+    position: absolute;
+
+    top: 0%;
+    left: 0%;
+
+    width: 469.32px;
+    height: 469.32px;
+    margin-top: -234.66px;
+    margin-left: -234.66px;
+
+    border-width: 1px;
+    /*border-style: dashed;
+    border-color: white;*/
+    border-radius: 50%;
+
+    -webkit-animation: spin-right 8.3s linear infinite;
+     -moz-animation: spin-right 8.3s linear infinite;
+      -ms-animation: spin-right 8.3s linear infinite;
+       -o-animation: spin-right 8.3s linear infinite;
+          animation: spin-right 8.3s linear infinite
+
+}
+#mars {
+    /* Style your mars */
+    position: absolute;
+    top: 0%;
+    left: 50%;
+
+    height: 1.95px;
+    width: 1.95px;
+    margin-left: -0.98px;
+    margin-top: -0.98px;
+
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 50%;
+
+    box-shadow: 0 0 128px black;
+
+    -webkit-animation: spin-right 2.06s linear infinite;
+     -moz-animation: spin-right 2.06s linear infinite;
+      -ms-animation: spin-right 2.06s linear infinite;
+       -o-animation: spin-right 2.06s linear infinite;
+          animation: spin-right 2.06s linear infinite
+
+
+}
+
+#mars-orbit {
+    /* For Section #2 */
+    position: absolute;
+
+    top: 0%;
+    left: 0%;
+
+    width: 492.53px;
+    height: 492.53px;
+    margin-top: -246.27px;
+    margin-left: -246.27px;
+
+    border-width: 1px;
+    /*border-style: dashed;
+    border-color: white;*/
+    border-radius: 50%;
+
+    -webkit-animation: spin-right 15.62s linear infinite;
+     -moz-animation: spin-right 15.62s linear infinite;
+      -ms-animation: spin-right 15.62s linear infinite;
+       -o-animation: spin-right 15.62s linear infinite;
+          animation: spin-right 15.62s linear infinite
+
+}
+
+#jupiter {
+    /* Style your jupiter */
+    position: absolute;
+    top: 0%;
+    left: 50%;
+
+    height: 41.12px;
+    width: 41.12px;
+    margin-left: -20.556px;
+    margin-top: -20.556px;
+
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 50%;
+
+    box-shadow: 0 0 128px black;
+
+    -webkit-animation: spin-right .82s linear infinite;
+     -moz-animation: spin-right .82s linear infinite;
+      -ms-animation: spin-right .82s linear infinite;
+       -o-animation: spin-right .82s linear infinite;
+          animation: spin-right .82s linear infinite
+}
+
+
+
+#jupiter-orbit {
+    /* For Section #2 */
+    position: absolute;
+
+    top: 0%;
+    left: 0%;
+
+    width: 655.60px;
+    height: 655.60px;
+    margin-top: -327.80px;
+    margin-left: -327.80px;
+
+    border-width: 1px;
+    /*border-style: dashed;
+    border-color: white;*/
+    border-radius: 50%;
+
+    -webkit-animation: spin-right 98.49s linear infinite;
+     -moz-animation: spin-right 98.49s linear infinite;
+      -ms-animation: spin-right 98.49s linear infinite;
+       -o-animation: spin-right 98.49s linear infinite;
+          animation: spin-right 98.49s linear infinite
+
+}
+
+#saturn {
+    /* Style your jupiter */
+    position: absolute;
+    top: 0%;
+    left: 50%;
+
+    height: 34.66px;
+    width: 34.66px;
+    margin-left: -17.33px;
+    margin-top: -17.33px;
+
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 50%;
+
+
+
+    -webkit-animation: spin-right .88s linear infinite;
+     -moz-animation: spin-right .88s linear infinite;
+      -ms-animation: spin-right .88s linear infinite;
+       -o-animation: spin-right .88s linear infinite;
+          animation: spin-right .88s linear infinite
+
+
+}
+
+#saturn-orbit {
+    /* For Section #2 */
+    position: absolute;
+
+    top: 0%;
+    left: 0%;
+
+    width: 848.50px;
+    height: 848.50px;
+    margin-top: -424.25px;
+    margin-left: -424.25px;
+
+    border-width: 1px;
+    /*border-style: dashed;
+    border-color: white;*/
+    border-radius: 50%;
+    /*29.45 earth year orbit around the sun*/
+    -webkit-animation: spin-right 244.64s linear infinite;
+     -moz-animation: spin-right 244.64s linear infinite;
+      -ms-animation: spin-right 244.64s linear infinite;
+       -o-animation: spin-right 244.64s linear infinite;
+          animation: spin-right 244.64s linear infinite
+
+}
+
+#uranus {
+    /* Style your uranus */
+    position: absolute;
+    top: 0%;
+    left: 50%;
+
+    height: 14.7px;
+    width: 14.7px;
+    margin-left: -7.35px;
+    margin-top: -7.35px;
+
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 50%;
+
+    box-shadow: 0 0 128px black;
+
+    -webkit-animation: spin-left 1.44s linear infinite;
+     -moz-animation: spin-left 1.44s linear infinite;
+      -ms-animation: spin-left 1.44s linear infinite;
+       -o-animation: spin-left 1.44s linear infinite;
+          animation: spin-left 1.44s linear infinite
+
+
+}
+
+#uranus-orbit {
+    /* For Section #2 */
+    position: absolute;
+
+    top: 0%;
+    left: 0%;
+
+    width: 1275.62px;
+    height: 1275.62px;
+    margin-top: -637.81px;
+    margin-left: -637.81px;
+
+    border-width: 1px;
+    /*border-style: dashed;
+    border-color: white;*/
+    border-radius: 50%;
+    /*84.3 earth year orbit around the sun*/
+    /*Because of the orbit radius scale, I used 3.43 times the saturn time*/
+    /*1.2 * 2.86 = 3.43 or (900/750)* (84.3/29.45)*/
+    -webkit-animation: spin-right 697.63s linear infinite;
+     -moz-animation: spin-right 697.63s linear infinite;
+      -ms-animation: spin-right 697.63s linear infinite;
+       -o-animation: spin-right 697.63s linear infinite;
+          animation: spin-right 697.63s linear infinite
+
+}
+
+#neptune {
+    /* Style your neptune */
+    position: absolute;
+
+    top: 0%;
+    left: 50%;
+
+    height: 14.24px;
+    width: 14.24px;
+    margin-left: -7.12px;
+    margin-top: -7.12px;
+
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 50%;
+
+    box-shadow: 0 0 128px black;
+
+    -webkit-animation: spin-right 1.34s linear infinite;
+     -moz-animation: spin-right 1.34s linear infinite;
+      -ms-animation: spin-right 1.34s linear infinite;
+       -o-animation: spin-right 1.34s linear infinite;
+          animation: spin-right 1.34s linear infinite
+
+
+}
+
+#neptune-orbit {
+    /* For Section #2 */
+    position: absolute;
+    top: 0%;
+    left: 0%;
+
+    width: 1759.54px;
+    height: 1759.54px;
+    margin-top: -879.77px;
+    margin-left: -879.77px;
+
+    border-width: 1px;
+    /*border-style: dashed;
+    border-color: white;*/
+    border-radius: 50%;
+    /*250 earth year orbit around the sun*/
+    /*Because of the orbit radius scale, I used 3.43 times the saturn time*/
+    /*1.2 * 2.86 = 3.43 or (900/750)* (84.3/29.45)*/
+    -webkit-animation: spin-right 1368.52s linear infinite;
+     -moz-animation: spin-right 1368.52s linear infinite;
+      -ms-animation: spin-right 1368.52s linear infinite;
+       -o-animation: spin-right 1368.52s linear infinite;
+          animation: spin-right 1368.52s linear infinite
+
+}
+
+
+/*
+Body 		Diameter
+(Earth = 1)
+Sun 		109
+Mercury 	.38
+Venus 		.95
+Earth 		1
+Mars 		.53
+Jupiter 	11.19
+Saturn 		9.40
+Uranus 		4.04
+Neptune 	3.88
+Pluto 		.18
+
+*/
+
+@-webkit-keyframes spin-right {
+  100% {
+    -webkit-transform: rotate(360deg);
+       -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+         -o-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes spin-right {
+  100% {
+    -webkit-transform: rotate(360deg);
+       -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+         -o-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin-left {
+  100% {
+    -webkit-transform: rotate(360deg);
+       -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+         -o-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes spin-left {
+  100% {
+    -webkit-transform: rotate(360deg);
+       -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+         -o-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
